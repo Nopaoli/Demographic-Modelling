@@ -2,7 +2,7 @@
 
 Here you can find all necessary data to replicate the analyses of simulated data from the paper Momigliano et al. 2020.
 
-## MS Simulations
+## MS simulations
 
 Within this subfolder you have several folders where the codes to recreate the 64 combinations of ancestral size expansion and bottlegrowth as well as IM and SC scanerios with symmetric and asymmetric migration
 
@@ -14,7 +14,7 @@ When analyses the data from MS simulations in &delta;&alpha;&delta;&iota; or *mo
 dadi.Spectrum.from_ms_file (infile, average=False)
 moments.Spectrum.from_ms_file (infile, average=False)
 
-## &delta;&alpha;&delta;&iota;  Models
+## &delta;&alpha;&delta;&iota;  models
 
 Within the Dadi_models folder you have the the basic IM and SC models used to analyse the simulations with  &delta;&alpha;&delta;&iota;, as well as functions for optmizing and parsing the results. These are modified versions of Daniel Portik's &delta;&alpha;&delta;&iota; pipeline. 
 
