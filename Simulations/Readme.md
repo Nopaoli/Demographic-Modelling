@@ -20,4 +20,4 @@ Within the Dadi_models folder you have the the basic IM and SC models used to an
 
 ## Moments models
 
-Within the Moments_models folder you have the 8 models (IM, SC; IM_B, SC_B, IM_AE, SC_AE, IM_AE_B, SC_AE_B) used for analysing teh simulated data with *moments* as well as functions to optimize and summarize the results. The optimization functions are a modfied verions from Daniel Portik's Daniel Portik's &delta;&alpha;&delta;&iota; pipeline that work in *moments*.
+Within the Moments_models folder you have the 8 models (IM, SC; IM_B, SC_B, IM_AE, SC_AE, IM_AE_B, SC_AE_B) used for analysing teh simulated data with *moments* as well as functions to optimize and summarize the results. The optimization functions are a modfied verions from Daniel Portik's Daniel Portik's &delta;&alpha;&delta;&iota; pipeline that works in *moments*.
