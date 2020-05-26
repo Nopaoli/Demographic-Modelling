@@ -13,3 +13,11 @@ Within the "100k_Loci folder" you have the codes to to recreate the simulations 
 When analyses the data from MS simulations in &delta;&alpha;&delta;&iota; or *moments* simply read use the commands
 dadi.Spectrum.from_ms_file (infile, average=False)
 moments.Spectrum.from_ms_file (infile, average=False)
+
+## Dadi Models
+
+Within the Dadi_models folder you have the the basic IM and SC models used to analyse the simulations with  &delta;&alpha;&delta;&iota;, as well as functions for optmizing and parsing the results. These are modified versions of Daniel Portik's &delta;&alpha;&delta;&iota; pipeline. 
+
+## Moments models
+
+Within the Moments_models folder you have the 8 models (IM, SC; IM_B, SC_B, IM_AE, SC_AE, IM_AE_B, SC_AE_B) used for analysing teh simulated data with *moments* as well as functions to optimize and summarize the results. The optimization functions are a modfied verions from Daniel Portik's Daniel Portik's &delta;&alpha;&delta;&iota; pipeline that work in *moments*.
