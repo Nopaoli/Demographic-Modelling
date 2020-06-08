@@ -1,0 +1,24 @@
+#example blueprint file
+#input setting
+popid: two-epoch_fold # id of the population (no white space)
+nseq: 48 # number of sequences
+L: 2652962 # total number of observed nucleic sites, including polymorphic and monomorphic
+whether_folded: true # whethr the SFS is folded (true or false)
+SFS: 3421.574853 1580.415749 1060.803732 824.934588 649.330078 518.040872 454.807769 412.386063 368.985589 318.244046 308.214430 289.403257 249.524045 267.527625 245.830832 220.462377 215.163580 208.314647 225.001834 229.736362 195.903938 206.162937 220.024225 81.066504
+#smallest_size_of_SFS_bin_used_for_estimation: 2 # default is 1; to ignore singletons, change this number to 2
+#largest_size_of_SFS_bin_used_for_estimation: 20 # default is nseq/2 for folded SFS
+pct_training: 0.67 # percentage of sites for training
+nrand: 12	24	36	48 # number of random break points for each try (separated by white space)
+project_dir: Tur_DAB_fold # project directory
+stairway_plot_dir: stairway_plot_es # directory to the stairway plot files
+ninput: 200 # number of input files to be created for each estimation
+#output setting
+mu: 1e-8 # assumed mutation rate per site per generation
+year_per_generation: 3 # assumed generation time (in years)
+#plot setting
+plot_title: Tur_DAB_fold # title of the plot
+xrange: 0.1,10000 # Time (1k year) range; format: xmin,xmax; "0,0" for default
+yrange: 0,0 # Ne (1k individual) range; format: xmin,xmax; "0,0" for default
+xspacing: 2 # X axis spacing
+yspacing: 2 # Y axis spacing
+fontsize: 12 # Font size
