@@ -13,4 +13,8 @@ this script takes the output of the previous script and calcuate, for each windo
 
 This script calculate dxy based on the windowed 2D-SFS. It's based on a script provided by Reto Burri
 
+## Stats_from_SFS_TD.R
+
+This script does something different, Rather than expecting the SFS for each window in separate lines, it expect one SFS file for each population, and outputs basic summary stats for all populations in a tab delimited text file. It assumes every SFS file for each population is present in the same folder and named POP.sfs.
+
 
