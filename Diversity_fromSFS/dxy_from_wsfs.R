@@ -1,10 +1,10 @@
 ################################################################################################################
 ##
-## Reto Burri, September 2018
+## paolo Momigliano, August 2020 (Based on a script originally provided by Reto Burri, though the expected input is different)
 ##
-## This script takes a table output by the estimate_dxy.sh pipeline that builds on angsd to output:
-## - window coordinates in the first rows in format scaf:start-end
-## - the 2D-SFS in the following rows
+## This script calculate dxy based on the 2D-SFS calculated by ANGSD in windows across the genome
+## It assumes an input structure like this: 
+## ecah row starts with the scaffold ID, start and end of window, followed by the 2D-SFS
 ##
 ## Command line input required to run the script is:
 ## - input file name in format group1-group2.windowSize.*
@@ -15,8 +15,6 @@
 ## - window coordinates in format scaf:start-end
 ## - dxy
 ## - number of sites in the window
-##
-## To run the script:
 ##
 ################################################################################################################
 
