@@ -1,19 +1,24 @@
 ################################################################################################################
 ##
-## Paolo Momigliano August 2020
+## Paolo Momigliano August 2020 (this is an extnsion of a script originally provided by Reto Burri)
 ##
-## Script to estimate pi from windowed 1D SFS
+## Script to estimate pi and  theta scaled as per site values,as well as  Tajima's D,  from windowed 1D SFS.  
 ##  The required input file consists of 
 ## - window coordinates in the first rows in format Scaf start end (tab separated)
-## - the 1D-SFS in the following rows (one row per window)
-## for example: 
-## CHR1 0 10000 
+## - the 1D-SFS in the following rows (one row per window, must include as first entry the number of invariable sites)
+##  - this assumes the unfolded spectrum, but since pi is based on allele frequencies, which are symmetrical regarding the SFS,
+##  theta is based on the number of segragating sites, and Tajima's D is a normalized difference between pi and theta, polarization is irrevelant. So you don't need
+##  an outgroup. 
+## Example line: 
+## CHR1 0 250000  14750000 14918709 830.852604 0.000097 0.000003 0.000000 0.000001 1.147293 0.000001 0.000001 0.000000 0.000000 0.000000 0.000000
 ##
 ## Command line input required to run the script is:
 ## - input file name 
+## the is no need to input number of individuals, since this information is already stored in the SFS.  
 ##
-## Output is a table with five columns:
-## - window coordinates in format scaf  start   end
+## Output is a table with 8 columns:
+## "scaffold","win_start","win_end","S","pi","ThetaW","nsites", "TajimaD"
+## S is the number of segragatimng sites, ThetaW is Whatterson's Theta, nsites the total number of bases from which the SFS was calculated
 ## - pi 
 ## - number of sites in the window (sum of the SFS)
 ##
@@ -56,12 +61,12 @@ c2 = b2 - (numChrom+2)/(a1*numChrom) + a2/a1^2
 e1 = c1/a1
 e2 = c2/(a1^2+a2)
 
-## iterate through sfs per window to compute window-wise dxy
-
+## Create a dataframe to write the statistics
 out.tab        <- data.frame(matrix(ncol=8,nrow=nrow(dat)))
 names(out.tab) <-c( "scaffold","win_start","win_end","S","pi","ThetaW","nsites", "TajimaD")
 
-##
+## iterate through sfs per window to compute window-wise dxy
+
 for (i in 1:nrow(dat)){
   
   out.tab$scaffold[i] <- as.character(dat[i,1])
