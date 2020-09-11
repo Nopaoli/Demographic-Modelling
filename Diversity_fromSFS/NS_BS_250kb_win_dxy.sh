@@ -15,15 +15,15 @@ module load bioconda
 source activate angsd
 
 ########################################################################################################
-#### This will read a list of 2 kb windows as ANGSD regions. This is made, for example, like this: 	####
-####	bedtools makewindows -w 250000 -g GCA_003186165.1_ASM318616v1_genomic.fna.fai > wind_250kb		####
-####	awk '{print  $1,":",$2,"-",$3 }' OFS="" wind_250kb > wind_250kb.rf								####
-####	Then we generate temporary SAF files, and add the sfs for each windows (both 1D for each	####
-####	pop and 2d. From these, we can estimates both dxy and pi with no bias using the other 		####
-####	scripts in the folder.																		####
-####	All filters and commands are given as variables to make the scripts easier to re-use.		####
-####	The script takes time but requires virtually no memory. All summary stats can then be 		####
-####	calculated from the SFSs, so you need only to run this one and you can get pi, Dxy, D etc.	####
+#### This will read a list of 250 kb windows as ANGSD regions. This is made, for example, like this: 
+####	bedtools makewindows -w 250000 -g GCA_003186165.1_ASM318616v1_genomic.fna.fai > wind_250kb	
+####	awk '{print  $1,":",$2,"-",$3 }' OFS="" wind_250kb > wind_250kb.rf								
+####	Then we generate temporary SAF files, and add the sfs for each windows (both 1D for each	
+####	pop and 2d. From these, we can estimates both dxy and pi with no bias using the other 		
+####	scripts in the folder.																		
+####	All filters and commands are given as variables to make the scripts easier to re-use.		
+####	The script takes time but requires virtually no memory. All summary stats can then be 		
+####	calculated from the SFSs, so you need only to run this one and you can get pi, Dxy, D etc.	
 ########################################################################################################
 
 
