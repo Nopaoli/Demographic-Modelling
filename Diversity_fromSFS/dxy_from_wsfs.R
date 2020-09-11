@@ -1,6 +1,6 @@
 ################################################################################################################
 ##
-## paolo Momigliano, August 2020 (Based on a script originally provided by Reto Burri, though the expected input is different)
+## Paolo Momigliano, August 2020 (Based on a script originally provided by Reto Burri, though the expected input is different)
 ##
 ## This script calculate dxy based on the 2D-SFS calculated by ANGSD in windows across the genome
 ## It assumes an input structure like this: 
