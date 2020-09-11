@@ -1,7 +1,6 @@
 ################################################################################################################
 ##
-## Paolo Momigliano August 2020 (this is an extnsion of a script originally provided by Reto Burri)
-##
+## Paolo Momigliano August 2020 
 ## Script to estimate pi and  theta scaled as per site values,as well as  Tajima's D,  from windowed 1D SFS.  
 ##  The required input file consists of 
 ## - window coordinates in the first rows in format Scaf start end (tab separated)
