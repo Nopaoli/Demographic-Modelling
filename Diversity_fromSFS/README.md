@@ -1,3 +1,5 @@
+<img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
+
 # Scripts to estimate several one and two population statistics based on 1D and 2D sfs estimated in windows across the genome
 
 ## NS_BS_250kb_win_dxy.sh
