@@ -7,7 +7,7 @@ This scripts estimates the 1D and 2D sfs in windows (in this specific caes 250kb
 You will need to change most of the variables defined at the beginning to your specicifc system and population names, but once you do that it should work on anything.
 
 ## Diversity_from_wsfs.R
-this script takes the output of the previous script and calcuate, for each window, &pi, Whatterson's theta, the number of segregating sites and Tajima's *D*. No need to estimate sample sizes, since this infomation is already included in the 1D-SFS
+this script takes the output of the previous script and calcuate, for each window, &pi, Whatterson's &theta, the number of segregating sites and Tajima's *D*. No need to estimate sample sizes, since this infomation is already included in the 1D-SFS
 
 ## dxy_from_wsfs.R
 
