@@ -1,10 +1,10 @@
-<img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
+
 
 # Scripts to estimate several one and two population statistics based on 1D and 2D sfs estimated in windows across the genome
 
 ## NS_BS_250kb_win_dxy.sh
 
-This scripts estimates the 1D and 2D sfs in windows (in this specific caes 250kb) across the genome. It has the advantage that , while slow, the script avoids creating any large file, and uses only a few MB of memory to analyse  RAD or whole genome data. It will output, from every population, a tab delimited file with the 1D SFS for each window, as well as 2D sfs for the population pair. The script generates unfolded SFSs, but since polarization of the SFS is irrelevant to the statistics calculated, the use of an outgroup is not necessary and the SFS can be polarized using the refernce sequence. Some of these stats (pi, Tajima's D) can be estimated directely in ANGSD. DXY can't, and other apporaches to calculate DXY assume having a VCF with all variant and invariant size, which are huge. 
+This scripts estimates the 1D and 2D sfs in windows (in this specific caes 250kb) across the genome. It has the advantage that , while slow, the script avoids creating any large file, and uses only a few MB of memory to analyse  RAD or whole genome data. It will output, from every population, a tab delimited file with the 1D SFS for each window, as well as 2D sfs for the population pair. The script generates unfolded SFSs, but since polarization of the SFS is irrelevant to the statistics calculated, the use of an outgroup is not necessary and the SFS can be polarized using the refernce sequence. Some of these stats (pi, Tajima's D) can be estimated directely in ANGSD. DXY can't, and other apporaches to calculate *d*<sub>xy<sub> assume having a VCF with all variant and invariant size, which are huge. 
 
 You will need to change most of the variables defined at the beginning to your specicifc system and population names, but once you do that it should work on anything.
 
