@@ -43,7 +43,6 @@ P2<- seq (0, 1, by=1/(m-1))
 # create all pairwise combinations
 	# For comparisons in which not the same number of individuals are included the sequence in which these values are generated is crucial to match the SFS/counts contained in d.
 	# The angsd manual states: For 2dsfs the results is a single line, assuming we have n categories in population1 and m categories in population2, then the first m values will be the SFS for the first category in population1, etc.
-	# I.e. with e.g. hispanica and cypriaca 10XG data, we have 2 and 1 individuals and thus m=5 and n=3 categories. Therefore the first 3 values need to be the ones for p1=0 and p2=0, 0.5, and 1. This is what is done in the below double loop.
 weights <- vector(length=n*m)
 c <- 1
 for (i in 1:n){
